@@ -1,0 +1,14 @@
+Advanced Topic Report
+I reviewed the Smart Mapping APIs included in the ArcGIS API for Javascript. https://screencast-o-matic.com/watch/cY6Y3l7JAb
+
+Final Project Application
+I developed this Agricultural District Assessment Tool was to gain comments from the public regarding the current boundaries of Chautauqua County's Agricultural Districts. Comments provided will be reviewed by planning staff at the Chautauqua County Department of Planning & Development to determine modifications to the district boundaries. This is not currently live, but just a prototype I wanted to develop for my day-job at the planning department.Interesting features
+
+I included:
+Dojo Page Layout - I used the dojo layout to structure the UI of the webpage.
+
+Dialog Dijit  - When the page first loads, a Dialog Dijit is shown to provide an explanation of the map and let the map and widgets load in the background.
+
+Layer List & Legend Widgets - I combined the Layer List and Legend Widgets (which is a sample provided by ESRI in the documentation) and placed them in the sidebar of my map rather than on the map view. When the visibility of a layer is toggled, the legend is also toggled. Placing the widgets in the sidebar keeps the map view clean.
+
+Expand & Editor Widget - The most distinct feature of this web app is the ability to add points to the map and enter text that will be shown in the popup. To do this, I created a point layer in ArcGIS Online and set it to be editable. I then set up the editor widget to be able to add points to the layer.  After the user opens the editor and clicks on the map, they are prompted to provide comment and their contact information. The user can type in the information and hit submit. Right away they can see the point they added to the map and be able to click on it to read their comments in a popup. To keep the UI clean, I also used the Expand Widget, which minimizes the widget to the Pencil Icon when it is not being used.

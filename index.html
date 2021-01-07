@@ -1,0 +1,64 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Ag District Assessment Tool - Final Project</title>
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" />
+  <link rel="stylesheet" href="https://js.arcgis.com/4.17/esri/themes/light/main.css">
+  <script src="https://js.arcgis.com/4.17/"></script>
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js"></script>
+  <!-- load dojo -->
+  <script>
+    require([
+        "dojo/parser",
+        "dijit/layout/BorderContainer",
+        "dijit/layout/ContentPane",
+    ], function(parser){
+        parser.parse();           
+    });
+</script>
+</head>
+<body class="claro">
+  <div id="appLayout" class="demoLayout" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design: 'headline'">
+    <div class="centerPanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'center'">
+      <div id="viewDiv"></div>
+    </div>
+    <div class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'top'">
+      <h2 class="sansserif" id="appTitle">Agricultural District Assessment Tool</h2>
+    </div>
+    <div id="leftCol" class="edgePanel panel-side" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'left', splitter: true">
+      <div id="layerListWidget">
+        <h3>Layer List & Legend</h3>
+        <p>Click on layer to toggle visibility</p>
+      </div>
+      <div id="appDescription" class="sansserif">
+        <h3>About</h3>
+        <p>
+          The <b>Agricultural District Assessment Tool</b> was developed to gain comment from the public regarding the current boundaries of Chautauqua County's Agricultural Districts. Comments provided will be reviewed by planning staff at the Chautauqua County Department of Planning & Development to determine modifications to the district boundaries.
+        </p>
+        <p>
+          Located on the left is a <b>Layer List & Legend</b>, which you can use to toggle the visibility of different data layers. To add a comment to the map, click the <b>Editor</b> icon (symbolized as a pencil) at the top-left edge of the map view. Please provide your name and a way to contact you so our planning staff can follow up regarding your comment.
+        </p>
+        <p>
+          If you have any questions, please contact:</br>
+          Brendan Cullen | Planning Technician</br>
+          716-753-4063</br>
+          <a href="mailto:cullenb@co.chautauqua.ny.us">cullenb@co.chautauqua.ny.us</a></br>
+          <a href='https://planningchautauqua.com'>planningchautauqua.com</a>.
+        </p>
+        <h3>Background</h3>
+        <p>
+          New York State enacted Article 25-AA of the Agriculture & Markets Law in 1971 to protect and promote the availability of land for farming. This resulted in the formation of Agricultural Districts administered by local county governments. Agricultural Districts protect Chautauqua County's farmland from the adverse effects of development by providing certain protections to the farming community. The benefits include limits to local regulation, limits to publicly funded construction and eminent domain projects, and discouragement of private nuisance lawsuits.
+        </p>
+        <p>
+          Every eight years, the Chautauqua County Department of Planning & Development oversee a full review of the County's Agricultural Districts. This review differs from the annual inclusion process in that redistricting (both inclusion and exclusion) can be enacted under one resolution by the County Legislature. This is an opportunity for each Agricultural District's farming community to provide recommendations to the County regarding what land should continue to be included, and what land should be enrolled or removed.
+        </p>
+        <div class="buttonDiv">
+          <a class="button" href="https://agriculture.ny.gov/land-and-water/about-agricultural-districts">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
