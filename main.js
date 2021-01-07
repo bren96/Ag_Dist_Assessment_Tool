@@ -28,9 +28,9 @@ require([
     // create splash screen to explain map and let map load
     var splashScreen = new Dialog({
       title: "About",
-      content: "<p>The <b>Agricultural District Assessment Tool</b> was developed to gain comment from the public regarding the current boundaries of Chautauqua County's Agricultural Districts. Comments provided will be reviewed by planning staff at the Chautauqua County Department of Planning & Development to determine modifications to the district boundaries.</p>" +
-      "<p>Located on the left is a <b>Layer List & Legend</b>, which you can use to toggle the visibility of different data layers. To add a comment to the map, click the <b>Editor</b> icon (symbolized as a pencil) at the top-left edge of the map view. Please provide your name and a way to contact you so our planning staff can follow up regarding your comment.</p>" +
-      "<p>If you have any questions, please contact:</br>Brendan Cullen | Planning Technician</br>716-753-4063</br><a href='mailto:cullenb@co.chautauqua.ny.us'>cullenb@co.chautauqua.ny.us</a></br><a href='https://planningchautauqua.com'>planningchautauqua.com</a>.</p>",
+      content: "<p style='font-family: Arial, Helvetica, sans-serif;'> The <b>Agricultural District Assessment Tool</b> was developed to gain comment from the public regarding the current boundaries of Chautauqua County's Agricultural Districts. Comments provided will be reviewed by planning staff at the Chautauqua County Department of Planning & Development to determine modifications to the district boundaries.</p>" +
+      "<p style='font-family: Arial, Helvetica, sans-serif;'> Located on the left is a <b>Layer List & Legend</b>, which you can use to toggle the visibility of different data layers. To add a comment to the map, click the <b>Editor</b> icon (symbolized as a pencil) at the top-left edge of the map view. Please provide your name and a way to contact you so our planning staff can follow up regarding your comment.</p>" +
+      "<p style='font-family: Arial, Helvetica, sans-serif;'> If you have any questions, please contact:</br>Brendan Cullen | Planning Technician</br>716-753-4063</br><a href='mailto:cullenb@co.chautauqua.ny.us'>cullenb@co.chautauqua.ny.us</a></br><a href='https://planningchautauqua.com'>planningchautauqua.com</a>.</p>",
       style: "width: 600px"
     });
     splashScreen.show()
